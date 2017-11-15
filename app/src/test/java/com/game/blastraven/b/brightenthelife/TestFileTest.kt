@@ -73,4 +73,5 @@ public class TestFileTest {
         assertEquals("正しい値2", mTestfile.substract(9, 3), 6);
     }
     GIT??
+    これは使いやすいのかわからない・・・?
 }*/
