@@ -72,4 +72,5 @@ public class TestFileTest {
     public void testSubstract() throws Exception {
         assertEquals("正しい値2", mTestfile.substract(9, 3), 6);
     }
+    GIT??
 }*/
