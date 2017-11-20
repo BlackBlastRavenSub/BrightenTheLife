@@ -23,23 +23,22 @@ class TestFileTest {
     @Throws(Exception::class)
     fun testSum() {
         //予想：1 + 5 で 6が返ってくるはず
-        assertEquals("正しい値", mTestfile!!.sum(1, 5).toLong(), 6)
+        assertEquals("正しい値", mTestfile!!.sum(1, 5), 6)
     }
 
     @Test
     @Throws(Exception::class)
     fun testSubstract() {
-        assertEquals("正しい値2", mTestfile!!.substract(9, 3).toLong(), 6)
+        assertEquals("正しい値2", mTestfile!!.substract(9, 3), 6)
     }
 
     @Test
     @Throws(Exception::class)
     fun testFirstKotlin(){
-        assertEquals(mTestfile!!.firstKotlin("OK?",68).toLong(),"GoodLuck!!")
+        assertEquals(mTestfile!!.firstKotlin("OK?",68),"GoodLuck!!")
+        //assertEquals(mTestfile!!.firstKotlin("OK?",68).toLong(),"GoodLuck!!")
     }
-
 }
-//assertEquals(mTestfile!!.firstKotlin("OK?",68).toLong(),"GoodLuck!!")
 
 /*package com.game.blastraven.b.brightenthelife;
 
@@ -72,6 +71,6 @@ public class TestFileTest {
     public void testSubstract() throws Exception {
         assertEquals("正しい値2", mTestfile.substract(9, 3), 6);
     }
-    GIT??
-    これは使いやすいのかわからない・・・?
+    GIT
+    これは使いやすそう!!
 }*/
