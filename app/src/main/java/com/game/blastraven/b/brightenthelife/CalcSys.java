@@ -9,28 +9,28 @@ public class CalcSys {
     //増殖イベント、増殖者の増殖係数、増殖者のLevel・・・未完成
     public int multiply(int multiplyPower) {
         //処理:回復するライフの算出
-        int multiplyResult=multiplyPower;//増殖結果＝増殖係数(増殖者のLevelを加味する必要あり)
+        int multiplyResult = multiplyPower;//増殖結果＝増殖係数(増殖者のLevelを加味する必要あり)
         return multiplyResult;
     }
 
     //捕食イベント、被害者のLevel、捕食者のLevel、捕食者の捕食係数(捕食者のLevelを加味する必要あり)・・・未完成
-    public int predation(int victimLevel, int predatorLevel,int predatorEatPower) {
+    public int predation(int victimLevel, int predatorLevel, int predatorEatPower) {
         //処理:発生した捕食ダメージの算出
-        int dice=new java.util.Random().nextInt(6) +1;//ダイスロール
-        int eatResult = predatorEatPower*dice*(predatorLevel-victimLevel);//引数をカードのID一つにしてそこからカードのLevelや能力参照はできないのか・・？
+        int dice = new java.util.Random().nextInt(6) + 1;//ダイスロール
+        int eatResult = predatorEatPower * dice * (predatorLevel - victimLevel);//引数をカードのID一つにしてそこからカードのLevelや能力参照はできないのか・・？
         return eatResult;
     }
 
     //進化イベント、DNAカードの種類、環境の設定・・・未完成
-    public int mutation(int dnaCard,int trouble){
+    public int mutation(int dnaCard, int trouble) {
         //処理:喰らう進化ダメージの値と進化成功判定
         return 0;
     }
 
     //地球イベント、引数なし・・・未完成
-    public int earthEvent(){
+    public int earthEvent() {
         //処理:ダイスの判定と効果
-        int earthResult= new java.util.Random().nextInt(6) +1;//ダイスロール
+        int earthResult = new java.util.Random().nextInt(6) + 1;//ダイスロール
         return earthResult;
     }
 }

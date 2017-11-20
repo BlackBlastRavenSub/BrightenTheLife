@@ -34,8 +34,8 @@ class TestFileTest {
 
     @Test
     @Throws(Exception::class)
-    fun testFirstKotlin(){
-        assertEquals(mTestfile!!.firstKotlin("OK?",68),"GoodLuck!!")
+    fun testFirstKotlin() {
+        assertEquals(mTestfile!!.firstKotlin("OK?", 68), "GoodLuck!!")
         //assertEquals(mTestfile!!.firstKotlin("OK?",68).toLong(),"GoodLuck!!")
     }
 }

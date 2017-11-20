@@ -13,11 +13,13 @@ class TestFile {
     fun substract(a: Int, b: Int): Int {
         return a - b
     }
-    fun firstKotlin(alpha:String,beta:Int): String{
-        if (alpha.equals("OK?")&&beta == 68){
+
+    fun firstKotlin(alpha: String, beta: Int): String {
+        if (alpha.equals("OK?") && beta == 68) {
             return "GoodLuck!!"
-        } else{
-            return "(´・ω・`)"}
+        } else {
+            return "(´・ω・`)"
+        }
     }
 }
 
