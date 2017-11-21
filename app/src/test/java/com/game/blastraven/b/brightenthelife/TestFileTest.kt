@@ -38,6 +38,8 @@ class TestFileTest {
         assertEquals(mTestfile!!.firstKotlin("OK?", 68), "GoodLuck!!")
         //assertEquals(mTestfile!!.firstKotlin("OK?",68).toLong(),"GoodLuck!!")
     }
+
+
 }
 
 /*package com.game.blastraven.b.brightenthelife;
