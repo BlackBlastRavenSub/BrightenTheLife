@@ -1,5 +1,6 @@
 package com.game.blastraven.b.brightenthelife;
 
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import org.junit.Test;
@@ -7,11 +8,12 @@ import org.junit.Test;
 import static android.content.ContentValues.TAG;
 import static org.junit.Assert.*;
 
+
 /**
  * Created by NodaShotaro on 2017/11/21.
  */
 //ネットからパクってきたコードだから、最後は消すように!!
-public class DBHelperTest {
+public class DBHelperTest extends AppCompatActivity {
 
     DBHelper dBHelper = null;
     @Test
