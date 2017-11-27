@@ -15,6 +15,10 @@ import static org.junit.Assert.*;
 //ネットからパクってきたコードだから、最後は消すように!!
 public class DBHelperTest extends AppCompatActivity {
 
+    public void DBHelper(){
+
+    }
+
 
     DBHelper dBHelper = null;
 
