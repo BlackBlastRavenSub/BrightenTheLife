@@ -31,12 +31,12 @@ public class DBHelperTest extends AppCompatActivity {
         try {
             dBHelper = new DBHelper(getApplicationContext());
             boolean result = dBHelper.isDatabaseDelete(getApplicationContext());
-            Log.d(TAG, " delete result : " + result);
+            System.out.println(" delete result : " + result);
         } catch (
                 Exception e)
 
         {
-            Log.d(TAG, e.getMessage());
+            System.out.println( e.getMessage());
             System.out.println(e.getMessage());
         }
     }
@@ -45,30 +45,29 @@ public class DBHelperTest extends AppCompatActivity {
     //DBHelperとDBOpenHelperを使ってデータベースを作成します。
     public void add() throws Exception {
         System.out.println("addメソッド開始");
-        Log.v(TAG, "addメソッド開始");
         try {
             dBHelper = new DBHelper(getApplicationContext());
         } catch (
                 Exception e) {
-            Log.v(TAG, e.getMessage());
             System.out.println(e.getMessage());
         }
-        Log.v(TAG, "addメソッド終了");
+        System.out.println("addメソッド終了");
     }
 
+    @Test
     public void delete() throws Exception {
         //上記で作成したデータベースを削除します。
         //DBHelper dBHelper = null;
         try {
             dBHelper = new DBHelper(getApplicationContext());
             boolean result = dBHelper.isDatabaseDelete(getApplicationContext());
-            Log.d(TAG, " delete result : " + result);
+            System.out.println(" delete result : " + result);
             System.out.println(" delete result : " + result);
         } catch (
                 Exception e)
 
         {
-            Log.d(TAG, e.getMessage());
+            System.out.println( e.getMessage());
             System.out.println(e.getMessage());
         }
     }

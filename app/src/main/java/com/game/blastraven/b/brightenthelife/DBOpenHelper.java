@@ -34,15 +34,15 @@ public class DBOpenHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(final SQLiteDatabase db) {
         System.out.println("onCreate version : " + db.getVersion());
-        Log.d(TAG, "onCreate version : " + db.getVersion());
+        System.out.println( "onCreate version : " + db.getVersion());
         this.execFileSQL(db, "create_table.sql");
     }
 
     @Override
     public void onUpgrade(final SQLiteDatabase db, final int oldVersion, final int newVersion) {
-        Log.d(TAG, "onUpgrade version : " + db.getVersion());
-        Log.d(TAG, "onUpgrade oldVersion : " + oldVersion);
-        Log.d(TAG, "onUpgrade newVersion : " + newVersion);
+        System.out.println("onUpgrade version : " + db.getVersion());
+        System.out.println("onUpgrade oldVersion : " + oldVersion);
+        System.out.println("onUpgrade newVersion : " + newVersion);
     }
 
     /**
